@@ -1,6 +1,9 @@
 # Luhn Algorithm to validate credit card numbers
 def is_valid_credit_card(card_number: str) -> bool:
     digits = [int(d) for d in card_number if d.isdigit()]
+    if not digits
+        return False
+        
     checksum = 0
     reverse_digits = digits[::-1]
 

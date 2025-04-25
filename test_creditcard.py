@@ -9,7 +9,7 @@ from apps.creditcard import is_valid_credit_card  # Replace 'your_module' with t
     ("4111111111111111", True),  # Another valid Visa
     ("4532015112830367", False), # Invalid - Luhn fail
     ("6011000990139425", False), # Invalid - altered last digit
-    ("1234567812345670", False), # Invalid random
+    ("1234567812345670", True), # Valid
     ("4111-1111-1111-1111", True),  # Valid Visa with dashes
     ("4111 1111 1111 1111", True),  # Valid Visa with spaces
     ("", False),  # Empty string
